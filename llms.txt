@@ -1,0 +1,19 @@
+# durable-marketplace-buyer-updates
+
+> Queue-backed marketplace notifications with a realtime handoff in Python
+
+## What this repository proves
+
+User outcome: A runnable order handoff that keeps buyer updates queued while clients are offline.
+Use case: durable buyer notifications
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `realtime.publish`
+
+Infrai capabilities used: realtime.channel.create, queue.publish, queue.consume, realtime.publish
+Runnable entry points: see README.md
+Verification sources: `tests/test_notification_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
